@@ -53,7 +53,7 @@ def number_the_lines(source, destination):
     file=open(destination,"w")
     c=1
     for i  in lst:
-        file.write(f"{c}. {i}")
+        file.write(f"{c}: {i}")
         c+=1
     file.close()
     return len(lst)
